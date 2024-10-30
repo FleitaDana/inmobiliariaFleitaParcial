@@ -1,0 +1,187 @@
+/* estilos.css */
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(163, 176, 254);
+    margin: 0;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    color: black;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(35, 34, 34);
+}
+
+footer {
+    background-color: rgb(91, 115, 250);
+    color: white;
+    text-align: center;
+    padding: 0.6rem 0; 
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.5rem; 
+    margin: 1rem; 
+    color: white;
+}
+
+h2, h3, p {
+    color: white;
+}
+
+/* Estilos Index */
+nav ul {
+    background-color: rgb(91, 115, 250);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem; 
+}
+
+nav ul li {
+    margin: 0 0.6rem; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Propiedades */
+.propiedades-container {
+    display: flex;
+    gap: 1.25rem; 
+    max-width: 1200px;
+    padding: 1.25rem; 
+    justify-content: center;
+    background-color: black;
+}
+
+.propiedad-box {
+    background-color: #ffffff;
+    border-radius: 8px; /* 8px = 0.5rem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 19rem; 
+}
+
+.propiedad-box img {
+    width: 100%;
+    height: 12rem; 
+    object-fit: cover;
+}
+
+.propiedad-box h3 {
+    font-size: 1.5rem; 
+    margin: 0.9 0 0.3; 
+    color: #333333;
+}
+
+.propiedad-box p {
+    font-size: 1rem; 
+    color: #666666;
+    margin-bottom: 0.9rem; 
+}
+
+/* Estilos Rotador/carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carrusel-imagenes {
+    display: flex;
+    height: 30rem; 
+}
+
+.carrusel-imagenes img {
+    width: 20%; 
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo para el form de contacto */
+.contacto-container {
+    height: auto;
+    width: 16rem; 
+    margin: auto; 
+    padding: 1rem; 
+    border: 1px solid #ccc;
+    border-radius: 0.5rem; 
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.form-group {
+    margin-bottom: 1rem; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 0.3rem; 
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; 
+    padding: 0.6rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.25rem; 
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    padding: 0.6rem 1rem; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
